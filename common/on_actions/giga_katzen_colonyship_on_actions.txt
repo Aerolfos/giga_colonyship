@@ -1,0 +1,18 @@
+on_entering_system_first_time = {
+	events = {
+		giga_katzen_colonyship.100 	# Found the lost Meopa Expedition 3 system
+	}
+}
+
+on_survey = {
+	events = { 
+		giga_katzen_colonyship.001 # Surveyed Katerise, start dig site
+		giga_katzen_colonyship.200 # Surveyed Forrana, event about Ezicania
+	}
+}
+
+on_ship_destroyed_perp = {
+	events = { 
+		giga_katzen_colonyship.101 # Defeated Meopa Expedition 3
+	}
+}

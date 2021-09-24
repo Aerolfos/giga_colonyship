@@ -1,0 +1,65 @@
+﻿    l_english:
+    #############################################################################################################################################
+    ### Event Chains ############################################################################################################################
+    #############################################################################################################################################
+    #########################################
+    ### Katerise ############################
+    #########################################
+    giga_katzen_colonyship.100.name:0 "The Selkar System"
+    giga_katzen_colonyship.100.desc:0 "Immediately after arrival our preliminary scans reported 3 habitable worlds in this system, already noteworthy, but also a large vessel of some kind orbiting one of the planets. Disturbingly, it seems our scans activated ancient protocols, as the ship has powered up and is moving to intercept our own!\n\nIt seems we will have to defeat the vessel before we can undertake a proper survey of the system."
+    giga_katzen_colonyship.100.a:0 "Battle stations!"
+
+    giga_katzen_colonyship.101.title:0 "Mysterious Ship Defeated"
+    giga_katzen_colonyship.101.desc:0 "Our fleets have managed to fatally cripple the large vessel in the Selkar system.\n\nEven after the massive beating, the overall superstructure still remains intact, a testament to the engineering prowess of whoever created this ship. We should investigate the system further."
+    giga_katzen_colonyship.101.a:0 "Wait, this colossal spaceship should serve under our flag!" # not implemented
+    giga_katzen_colonyship.101.b:0 "So be it."
+
+    giga_katzen_colonyship.001.name:0 "A New Necropolis"
+    giga_katzen_colonyship.001.desc:0 "The mysterious vessel in the Selkar system was orbiting the planet Katerise before activation. Initial surveys of this planet and its large moon report a familiar sight, vast irradiated ruins buried under sand everywhere on the surface. Scientists were immediately reminded of our long studies of the world Katzenland, and as a result a dig site has been established to figure out if this world too is a remnant of the Katzen, and how they managed to find themselves in a system cut off from the rest of the galaxy."
+    giga_katzen_colonyship.001.a:0 "Interesting."
+
+    giga_katzen_colonyship.200.name:0 "Primitive Ezicania"
+    giga_katzen_colonyship.200.desc:0 "Our scientists have reported a surprising find, not only does the third habitable world in the system have primitives, they are Ezicania, just like we found on Katzenland! However, they are living a primitive life with no records of the past being kept. As such we are unable to find any indication of their origin or relation to the Katzen at this time. In fact, no traces of Katzen whatsoever have been found on Forrana."
+    giga_katzen_colonyship.200.a:0 "Weird."
+
+    site_katerise:0 "Katzen Necropolis?"
+    site_katerise_intro:0 "Once more we find an entire dead civilization buried beneath swirling sand dunes. How could this have happened twice?"
+
+    giga_katzen_colonyship.002.name:0 "Katzen Skeletons"
+    giga_katzen_colonyship.002.desc:0 "As expected, our archaeologists did indeed find the familiar feline skeletons of the Katzen buried in the dead world. Our teams at this time have no clue why the Katzen are so far from home. But it does seem they did indeed nuke themselves, again.\n\nHowever, we have found no traces of dead Ezicania this time. While our surveys did find Ezicania on the nearby planet Forrana, they have no knowledge of their own origin or any Katzen, so we will have to keep digging to find out what happened."
+    giga_katzen_colonyship.002.a:0 "Keep going!"
+
+    giga_katzen_colonyship.003.name:0 "Buried Data Core"
+    giga_katzen_colonyship.003.desc:0 "Our team zeroed in on long-lasting nuclear power sources, and uncovered several ancient data caches. Some basic history files are available, and our archaelogy team now holds that the ship we encountered was none other than one of the fabled §YMeopian Expedition§! colony ships. However, practically no information could be found about initial settlement, what Katzenland was doing, or what happened to the Ezicania. There are oblique references to Ezicania 'wasting their lives and potential as usual', but nothing concrete. Our biggest find was the location of a large monument, the Meopa Memorial. This seems a worthwhile site to uncover."
+    giga_katzen_colonyship.003.a:0 "Dig it up!"
+
+    giga_katzen_colonyship.004.name:0 "Katzen Monument"
+    giga_katzen_colonyship.004.desc:0 "After much digging we did indeed find a central plaza, at the base of a familiar-looking vast pyramid structure, likely the Katzen capital and site of their initial colonization efforts. Our archaeologists did find the so-called Meopa Memorial at the centre of the plaza, a small recreation of the original Katzenland governmental pyramid. However, any plaques or inscriptions are overshadowed by long-faded graffiti."
+    giga_katzen_colonyship.004.a:0 "Figure out what it says!"
+
+    giga_katzen_colonyship.005.name:0 "Meopa's Legacy"
+    giga_katzen_colonyship.005.desc:0 "After careful restoration work our teams succeeded in decoding the graffiti. Surprisingly, the graffiti are prominently anti-Meopa, mocking his legacy and lack of foresight. Multiple instances of 'good riddance' and similar variations were found. This contrasts with the god-like reverence Meopa received on Katzenland before the Meopian Expeditions were funded and launched. \n\nAdditional expeditions to the interior of the surrounding structures found and decoded plans detailing the capital layout, including detailed 3D models that displayed the original plaques. However the plaques make no reference to Meopa, instead simply listing Katzen names. Presumably the Katzen named were part of the initial colonization efforts for Katerise and its moon."
+    giga_katzen_colonyship.005.a:0 "Keep digging!"
+
+    giga_katzen_colonyship.006.name:0 "Capital Archives"
+    giga_katzen_colonyship.006.desc:0 "Our team continued their exploration of the colossal pyramid, looking for further data on the first years of the colony. In the end they found a deep bunker complex containing multiple operational server stacks, the room being similar in design to the cryo-sleep arrangements on Katzenland. At last we can reconstruct the initial sequence of events.\n\nIt seems at least one §YMeopian Expedition§! ship was launched to explore a mysterious stable wormhole several lightyears from Katzenland. Even at the height of their empire the Katzen lacked miniaturized FTL drives, necessitating the vast self-sustaining colony ships, and in part explaining their heavy armament. §YMeopian Expedition 4§! found itself exploring the Selkar system, and remained in contact with their homeworld for a while. However the distances involved and limited FTL bandwidth meant Meopa never had quite as much control over Katerise, explaining the separatist movement that gradually set in. Criticism of Project Katzenform ran rampant in Katerise society. However, the wormhole unexpectedly collapsed, meaning the Katzen of Katerise never witnessed the Katzen-Sobaki war.\n\nThe Katzen wrote a new constitution and formalized their separation from Meopa's Empire, generally coming to regard his rule as a sad time for their people. The names of the first colonists, many of them members of the new government, were recorded on the monument that had at first been dedicated to Meopa for founding the expeditions, and by extension the whole colony. It seems the name Meopa Memorial is ironic in nature. This is also the time where the Ezicania formally requested to secede from the new government, wishing to be granted the poorly-developed nearby world of Forrana, leaving Janix and Katerise for the new Katzen government. Apparently they found themselves unhappy with the hyper-militaristic and tech-obsessed ways of the Katzen, and wished to return to a simpler life. This explains the nearby primitive Ezicania, and the splitting of their two species, but not what happened to the new Katzen empire."
+    giga_katzen_colonyship.006.a:0 "We must find out."
+
+    giga_katzen_colonyship.007.name:0 "History Repeats"
+    giga_katzen_colonyship.007.desc:0 "In the end, the answer was found on Janix and not on Katerise. It was one of the aides that first proposed the theory that Janix had at some point seceded, the competitive Katzen mindset leading to inevitable splits in any government. Indeed, data caches buried deep in hardened bunkers confirm the rise of a new emperor figure, known only as Kastair. Kastair rose to the top of a prominent weapons-manufacturing corporation, the Farnex corporation. Farnex gradually supplanted governmental functions on Janix, a polluted heavy industrial world by now. Kastair used his mercenary private military to seize control of the world in a great coup, crowning himself new emperor of all the Katzen. Unsurprisingly, the Katzen of Katerise objected. The conflict was quick to escalate, both sides fighting fiercely not only on the planets but also aboard the §YMeopian Expedition 4§!, apparently still the only FTL-capable Katzen ship in the system after many decades.\n\nAs one might expect, it didn't take long before both sides started using their absurdly large nuclear stockpiles, evidently even Katzen corporations are quite capable of glassing entire worlds. Once more two worlds lay devasted, and the Katzen were all but wiped out. Again.\n\nIt is not clear which faction eventually seized control of the §YMeopian Expedition 4§!, but we do know the systems were badly damaged. The remaining Katzen entered cryo-pods and activated automated defence systems, putting both themselves and the ship to sleep until automated repairs had been completed or new ships entered the system. The repairs evidently succeeded, but the waking did not, and any trace of frozen Katzen were wiped out during our fight with the vessel."
+    giga_katzen_colonyship.007.a:0 "Horrific."
+    giga_katzen_colonyship.007.b:0 "Thankfully the Katzen that found Flusion were less barbaric."
+    giga_katzen_colonyship.007.c:0 "That's the third time this feline menace has wiped itself out!"
+
+    #############################################################################################################################################
+    ### Ambient Objects #########################################################################################################################
+    #############################################################################################################################################
+    giga_meopa_expedition_broken_object:0 "Disabled Katerise Guardian Ship"
+    giga_meopa_expedition_broken_object_desc:0 "Even in death this is still an impressive vessel."
+    giga_meopa_expedition_broken_object_tooltip:0 "That's a big spaceship."
+
+    #############################################################################################################################################
+    ### Ship Classes #########################################################################################################################
+    #############################################################################################################################################
+    giga_meopa_expedition:0 "Katzen Colony Ship"
+    giga_meopa_expedition_plural:0 "Katzen Colony Ships"

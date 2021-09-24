@@ -1,0 +1,29 @@
+# Meopa Expedition
+ship_section_template = {
+	key = "giga_meopa_expedition_section"
+	ship_size = giga_meopa_expedition
+	fits_on_slot = "mid"
+	entity = "heaven_01_ark_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	# main guns
+	component_slot = { name = "LARGE_GUN_01"		template = "large_turret"					locatorname = "loc101" }
+	component_slot = { name = "LARGE_GUN_02"		template = "large_turret"					locatorname = "loc101" }
+	# missile battery
+	component_slot = { name = "MISSILE_01"			template = "invisible_extra_large_fixed"	locatorname = "loc101" }
+	component_slot = { name = "MISSILE_02"			template = "invisible_extra_large_fixed"	locatorname = "loc101" }
+	component_slot = { name = "MISSILE_03"			template = "invisible_extra_large_fixed"	locatorname = "loc101" }
+	component_slot = { name = "MISSILE_04"			template = "invisible_extra_large_fixed"	locatorname = "loc101" }
+	component_slot = { name = "MISSILE_05"			template = "invisible_extra_large_fixed"	locatorname = "loc101" }
+	component_slot = { name = "MISSILE_06"			template = "invisible_extra_large_fixed"	locatorname = "loc101" }
+	component_slot = { name = "MISSILE_07"			template = "invisible_extra_large_fixed"	locatorname = "loc101" }
+	component_slot = { name = "MISSILE_08"			template = "invisible_extra_large_fixed"	locatorname = "loc101" }
+	# close in weapons systems
+	component_slot = { name = "LARGE_03"			template = "large_turret"					locatorname = "loc101" }
+	component_slot = { name = "LARGE_04"			template = "large_turret"					locatorname = "loc101" }
+	# repurposed hangar bay
+	component_slot = { name = "STRIKE_CRAFT_01"		template = "large_strike_craft"				locatorname = "loc101" }
+
+	large_utility_slots = 4
+	aux_utility_slots = 2
+}

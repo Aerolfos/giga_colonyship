@@ -1,0 +1,153 @@
+# Selkar System
+giga_selkar_initializer = {
+	name = "Selkar"
+	class = "sc_k"
+	flags = { katerise_system }
+	asteroid_belt = { type = rocky_asteroid_belt radius = 139 }
+
+	planet = {
+		name = "Selkar"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 21
+		has_ring = no
+	}
+
+	planet = {
+		name = "Estvor"
+		class = "pc_molten"
+		orbit_distance = 27
+		orbit_angle = -43
+		size = 10
+		has_ring = yes
+
+		moon = {
+			name = "Mitrar"
+			class = "pc_barren"
+			size = 7
+			orbit_distance = 7
+			orbit_angle = 80
+			has_ring = no
+		}
+	}
+
+	planet = {
+		name = "Katerise"
+		class = "pc_katzenland"
+		orbit_distance = 40
+		orbit_angle = 77
+		size = 20
+		has_ring = no
+		init_effect = {
+			add_modifier = { modifier = "katzenland_planet" days = -1 }
+			clear_blockers = yes
+			prevent_anomaly = yes
+			set_planet_flag = katerise
+			save_global_event_target_as = katerise
+			while = {
+				count = 14
+				create_katzenland_deposits = yes
+			}
+			giga_field_debris = yes
+			create_katzen_colonyship = yes
+		}
+
+		moon = {
+			name = "Janix"
+			class = "pc_katzenland"
+			size = 18
+			orbit_distance = 12
+			orbit_angle = { min = 0 max = 360 }
+			has_ring = no
+			init_effect = {
+				add_modifier = { modifier = "katzenland_planet" days = -1 }
+				clear_blockers = yes
+				prevent_anomaly = yes
+				set_planet_flag = forbid_guillis_planet_modifiers
+				while = {
+					count = 12
+					create_katzenland_deposits = yes
+				}
+			}
+		}
+	}
+
+	planet = {
+		name = "Forrana"
+		class = "pc_continental"
+		orbit_distance = 34
+		orbit_angle = 190
+		size = 15
+		has_ring = yes
+		init_effect = {
+			clear_blockers = yes
+			prevent_anomaly = yes
+			set_planet_flag = forbid_guillis_planet_modifiers
+			set_planet_flag = forrana
+			save_global_event_target_as = forrana
+			generate_Forrana_primitives_on_planet = yes
+		}
+
+		moon = {
+			name = "Vaptar"
+			class = "pc_barren_cold"
+			size = 7
+			orbit_distance = 10
+			orbit_angle = { min = 0 max = 360 }
+			has_ring = no
+		}
+	}
+
+	change_orbit = 40
+
+	planet = {
+		name = "RP-214"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 0 max = 360 }
+		size = 1
+		has_ring = no
+	}
+
+	planet = {
+		name = "RP-297"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 47
+		size = 2
+		has_ring = no
+	}
+
+	planet = {
+		name = "RP-238"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -145
+		size = 3
+		has_ring = no
+	}
+
+	planet = {
+		name = "Ghax"
+		class = "pc_frozen"
+		orbit_distance = 12
+		orbit_angle = { min = 0 max = 360 }
+		size = 14
+		has_ring = no
+	}
+
+	# temporary to make it spawn in the galaxy
+	# should be spawned via EHOF event as a unique EHOF leviathan system instead
+	usage = misc_system_init
+	usage_odds = {
+		base = 2000000
+		modifier = {
+			factor = 0
+			is_bottleneck_system = yes
+		}
+	}
+	max_instances = 1
+}
+
+

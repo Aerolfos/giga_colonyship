@@ -1,0 +1,38 @@
+# Meopa Expedition ships
+ship_design = {
+	name = "Meopa Expedition"
+	ship_size = giga_meopa_expedition
+	section = {
+		template = "giga_meopa_expedition_section"
+		slot = "mid"
+		# main guns
+		component = { slot = "LARGE_GUN_01"			template = "KINETIC_ARTILLERY_2" }
+		component = { slot = "LARGE_GUN_02"			template = "KINETIC_ARTILLERY_2" }
+		# missile battery
+		component = { slot = "MISSILE_01"			template = "GIGA_FLUSION_MISSILE_01" }
+		component = { slot = "MISSILE_02"			template = "GIGA_FLUSION_MISSILE_01" }
+		component = { slot = "MISSILE_03"			template = "GIGA_FLUSION_MISSILE_01" }
+		component = { slot = "MISSILE_04"			template = "GIGA_FLUSION_MISSILE_01" }
+		component = { slot = "MISSILE_05"			template = "GIGA_FLUSION_MISSILE_01" }
+		component = { slot = "MISSILE_06"			template = "GIGA_FLUSION_MISSILE_01" }
+		component = { slot = "MISSILE_07"			template = "GIGA_FLUSION_MISSILE_01" }
+		component = { slot = "MISSILE_08"			template = "GIGA_FLUSION_MISSILE_01" }
+		# close in weapons systems
+		component = { slot = "LARGE_03"				template = "GIGA_FLUSION_AUTOCANNON_01" }
+		component = { slot = "LARGE_04"				template = "GIGA_FLUSION_AUTOCANNON_01" }
+		# repurposed hangar bay
+		component = { slot = "STRIKE_CRAFT_01"		template = "GIGA_MOON_FIGHTER_1" }
+
+		# hull
+		component = { slot = "LARGE_UTILITY_1"		template = "LARGE_SHIELD_2" }
+		component = { slot = "LARGE_UTILITY_2"		template = "LARGE_ARMOR_4" }
+		component = { slot = "LARGE_UTILITY_3"		template = "LARGE_ARMOR_4" }
+		component = { slot = "LARGE_UTILITY_4"		template = "LARGE_ARMOR_4" }
+	}
+
+	required_component = HYPER_DRIVE_1
+	required_component = COMBAT_COMPUTER_ARTILLERY_ADVANCED
+	required_component = TITAN_SHIP_THRUSTER_3
+	required_component = SENSOR_2
+	required_component = BATTLESHIP_ANTIMATTER_REACTOR
+}

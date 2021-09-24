@@ -1,0 +1,97 @@
+#################################
+### Generate Primitives #########
+#################################
+# Forrana Ezic colonists
+generate_Forrana_primitives_on_planet = {
+	create_species = {
+		name = "Dark Forest Ezicania"
+		plural = "Dark Forest Ezicanias"
+		class = HUM
+		portrait = humanoid_03
+		traits = {
+			trait = trait_venerable
+			trait = trait_intelligent
+			trait = trait_ingenious
+			trait = trait_nonadaptive
+			trait = trait_sedentary
+		}
+		effect = {
+			save_global_event_target_as = darkforestezics
+		}
+	}
+	create_country = {
+		name = "Ezic Nation"
+		name_list = random
+		authority = random
+		civics = {
+			civic = civic_increasing_urbanization
+			civic = civic_atmospheric_pollution
+		}
+		species = last_created_species
+		ethos = {
+			ethic = "ethic_fanatic_spiritualist"
+			ethic = "ethic_pacifist"
+		}
+		flag = {
+			icon={
+				category="pirate"
+				file="flag_pirate_4.dds"
+			}
+			background={
+				category="backgrounds"
+				file="circle.dds"
+			}
+			colors={
+				"light_blue"
+				"grey"
+				"null"
+				"null"
+			}
+		}
+		type = primitive
+	}
+	last_created_country = {
+		set_graphical_culture = industrial_01
+		set_country_flag = ezic_lost_colonists
+		set_country_flag = ezic_age
+		set_primitive_age = ezic_age
+		save_global_event_target_as = ezic_lost_colonists
+	}
+	while = {
+		count = 10
+		create_pop = { species = event_target:darkforestezics }
+		create_army = { name = "Ezic Hunters" owner = last_created_country species = event_target:darkforestezics type = "flusion_army" }
+	}
+	add_building = building_giga_ezic_capital
+	remove_building = building_colony_shelter
+}
+
+# Colony Ship
+create_katzen_colonyship = {
+	create_country = {
+		name = "Katzen Remnants"
+		type = faction
+	}
+	last_created_country = {
+		set_country_flag = katzen_remnants
+		create_fleet = {
+			name = "Meopa Expedition 4"
+			settings = {
+				spawn_debris = no
+				is_boss = yes
+			}
+			effect = {
+				set_owner = PREV
+				set_fleet_flag = colonyship_fleet
+				create_ship = {
+					name = "Meopa Expedition 4"
+					design = "Meopa Expedition"
+					effect = {
+						set_ship_flag = meopa_expedition_4
+					}
+				}
+				set_location = event_target:katerise
+			}
+		}
+	}
+}

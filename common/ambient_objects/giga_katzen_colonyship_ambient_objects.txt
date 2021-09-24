@@ -1,0 +1,8 @@
+ambient_object = {
+	name = "giga_meopa_expedition_broken_object"
+	entity = "heaven_01_ark_entity"
+	selectable = yes
+	show_name = yes
+	tooltip = "giga_meopa_expedition_broken_object_tooltip"
+	description = "giga_meopa_expedition_broken_object_desc"
+}
