@@ -1,0 +1,23 @@
+For the Gigastructures Discord competition.
+
+Spoilers for content:
+
+Spawns the new system Selkar with what turns out to be a Katzen colony ship, the Meopian Expedtion 4. The Katzen found an EHOF system basically by accident, and colonized it. However they ended up nuking themselves... again.
+
+[u]Issues:[/u]
+
+Should spawn as a random EHOF system when you have the empire_flag = found_katzenland_katzens
+
+I'm not entirely happy with the pacing in the dig site, so give feedback on that. 
+
+The rewards could be looked at - one is getting the event for the Katzen bombardment, since that requires having seen two Irradiated Desert planets in vanilla gigas, and this counts as the second IMO. The event referenced doesn't acknowledge that, but I can't rewrite gigas own events. 
+
+The new ship flies the wrong way around compared to what I imagined - not a big deal.
+
+Locators are a mess - this needs messing with the 3D model, no can do from my side.
+
+It would be nice if you could refurbish the broken Katzen colony ship as a war ship for yourself. No support for this atm.
+
+I want to spawn an ambient object with the broken ship after having killed it, but don't know how to get the broken model for the ship.
+
+The Ezicanias could be said to have evolved into another subspecies, adding more to the catch them all aspect. I don't know the lore enough to attempt that - right now they're the Dark Forest type that used to be on Katzenland.
