@@ -1,12 +1,16 @@
-For the Gigastructures Discord competition.
+Originally made for the Gigastructures Discord competition.
+
+Updated to 3.4.
+
+This mod will add a new unique system to the EHOF cohesives, with a Gigastructures-related storyline to be uncovered.
+
+Spawn conditions:
+[spoiler] You must have done the Katzenland digsite and found the Katzen origin in order to make the system spawn. It will randomly spawn when you generate new cohesive systems. [/spoiler]
 
 Spoilers for content:
-
-Spawns the new system Selkar with what turns out to be a Katzen colony ship, the Meopian Expedtion 4. The Katzen found an EHOF system basically by accident, and colonized it. However they ended up nuking themselves... again.
+[spoiler] Spawns the new system Selkar with what turns out to be a Katzen colony ship, the Meopian Expedtion 4. The Katzen found an EHOF system basically by accident, and colonized it. However they ended up nuking themselves... again. [/spoiler]
 
 [u]Issues:[/u]
-
-Should spawn as a random EHOF system when you have the empire_flag = found_katzenland_katzens
 
 I'm not entirely happy with the pacing in the dig site, so give feedback on that. 
 
