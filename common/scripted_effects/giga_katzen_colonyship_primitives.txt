@@ -66,7 +66,16 @@ generate_Forrana_primitives_on_planet = {
 	remove_building = building_colony_shelter
 }
 
-# Colony Ship
+# Colony Ship - seemingly broken version
+create_broken_katzen_colonyship = {
+	create_ambient_object = { type = "giga_meopa_expedition_broken_object" location = event_target:katerise }
+	last_created_ambient_object = {
+		save_event_target_as = giga_meopa_expedition_unpowered
+		set_ambient_object_flag = giga_meopa_expedition_unpowered
+	}
+}
+
+# Proper colony ship (boss fight)
 create_katzen_colonyship = {
 	create_country = {
 		name = "Katzen Remnants"

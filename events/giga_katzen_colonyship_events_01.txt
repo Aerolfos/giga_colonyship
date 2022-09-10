@@ -78,8 +78,34 @@ ship_event = {
 		}
 	}
 
-	immediate = { owner = { set_country_flag = encountered_meopa_expedition_4 } }
+	immediate = { 
+		owner = { set_country_flag = encountered_meopa_expedition_4 }
+		# give the player 30 days to GTFO
+		from = { system_event = { id = giga_katzen_colonyship.102 days = 30 random = 8 } }
+	}
 	option = { name = "giga_katzen_colonyship.100.a" }
+}
+
+system_event = {
+	id = giga_katzen_colonyship.102
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_star_flag = katerise_system
+	}
+
+	immediate = {
+		random_system_planet = {
+			limit = { has_planet_flag = katerise }
+			save_event_target_as = katerise
+		}
+		create_katzen_colonyship = yes
+		every_system_ambient_object = {
+			limit = { has_ambient_object_flag = giga_meopa_expedition_unpowered }
+			destroy_ambient_object = this
+		}
+	}
 }
 
 ## Killed the ship

@@ -50,7 +50,7 @@ giga_selkar_initializer = {
 				create_katzenland_deposits = yes
 			}
 			giga_field_debris = yes
-			create_katzen_colonyship = yes
+			create_broken_katzen_colonyship = yes
 		}
 
 		moon = {

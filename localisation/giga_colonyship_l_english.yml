@@ -6,7 +6,7 @@
  ### Katerise ############################
  #########################################
  giga_katzen_colonyship.100.name:0 "The Selkar System"
- giga_katzen_colonyship.100.desc:0 "Immediately after arrival our preliminary scans reported 3 habitable worlds in this system, already noteworthy, but also a large vessel of some kind orbiting one of the planets. Disturbingly, it seems our scans activated ancient protocols, as the ship has powered up and is moving to intercept our own!\n\nIt seems we will have to defeat the vessel before we can undertake a proper survey of the system."
+ giga_katzen_colonyship.100.desc:0 "Our preliminary scans immediately after arrival reported 3 habitable worlds in this system, already noteworthy, but also a large vessel of some kind orbiting one of the planets. Disturbingly, it seems our scans activated ancient protocols, as the ship has has started to power up! \n§RWe estimate about 20 days before it starts moving to intercept our own ships in the system.§!\n\nIt seems we will have to defeat the vessel before we can undertake a proper survey of the system."
  giga_katzen_colonyship.100.a:0 "Battle stations!"
 
  giga_katzen_colonyship.101.title:0 "Mysterious Ship Defeated"
