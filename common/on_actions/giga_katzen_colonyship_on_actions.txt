@@ -1,6 +1,6 @@
 on_entering_system_first_time = {
 	events = {
-		giga_katzen_colonyship.100 	# Found the lost Meopa Expedition 3 system
+		giga_katzen_colonyship.100 	# Found the lost Meopa Expedition 4 system
 	}
 }
 
@@ -11,8 +11,29 @@ on_survey = {
 	}
 }
 
+# A country has gained a surveyed status on a planet. Happens after "on_survey" if a science ship surveyed a planet.
+# Root = Planet
+# From = Country
+# FromFrom = Fleet of the science ship that surveyed it, if any
+on_planet_surveyed = {
+	events = {
+		giga_katzen_colonyship.111 # fallbacks for alternative surveys of Katerise
+		giga_katzen_colonyship.112
+	}
+}
+
 on_ship_destroyed_perp = {
 	events = { 
-		giga_katzen_colonyship.101 # Defeated Meopa Expedition 3
+		giga_katzen_colonyship.101 # Defeated Meopa Expedition 4
+	}
+}
+
+# from gigas files on usage
+# For randomly spawned systems, this takes place before the gigas checks take place, so you should always include a random chance in your event or you will always override
+# From = The system from which the new system will be generated (the system used as a location for reference, it should be one of the cohesive cluster systems) 
+# This = Country firing the EHOF
+ehof_custom_random_spawn = {
+	random_events = {
+		1 = giga_katzen_colonyship.110
 	}
 }

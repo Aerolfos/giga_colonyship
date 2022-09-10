@@ -1,0 +1,8 @@
+
+# evaluate from country scope
+cannot_spawn_katzen_colonyship = {
+	or = {
+		not = { has_country_flag = found_katzenland_katzens }
+		has_global_flag = selkar_has_spawned
+	}
+}

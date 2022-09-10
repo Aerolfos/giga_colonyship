@@ -1,6 +1,62 @@
 namespace = giga_katzen_colonyship
 
 #######################################################
+### EHOF Spawn ########################################
+#######################################################
+# FROM = The system from which the new system will be generated (the system used as a location for reference, it should be one of the cohesive cluster systems) 
+# THIS = Country firing the EHOF
+country_event = {
+	id = giga_katzen_colonyship.110
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		years_passed > 10
+		has_country_flag = found_katzenland_katzens
+	}
+	immediate = {
+		random_list = {
+			# a weighted list for what to choose for generation, random list used so multiple initializers are possible later
+			10 = {
+				modifier = {
+					factor = 0
+					cannot_spawn_katzen_colonyship = yes
+				}
+				from = {
+					ehof_giga_new_create_new_continuous_system = {
+						# gigas scripted effect that spawns system ehof style using the designated initializer
+						initializer = giga_selkar_initializer
+					}
+				}
+				set_global_flag = selkar_has_spawned
+			}
+		}
+	}
+	weight_multiplier = {
+		# the multiplier for how likely our system spawn gets run vs other systems
+		# this gets applied to the weight in the on action
+		factor = 1
+		modifier = {
+			# use these country flags to make it easier to test the spawn
+			factor = 10000
+			or = {
+				has_country_flag = guarantee_special_spawns
+				has_country_flag = guarantee_special_system
+			}
+		}
+		modifier = {
+			# avoid messing with reality code
+			factor = 0
+			has_country_flag = ehof_spawn_reality_code
+		}
+		modifier = {
+			# makes sure that if system can't be spawned, a system will still be spawned
+			factor = 0
+			cannot_spawn_katzen_colonyship = yes
+		}
+	}
+}
+
+#######################################################
 ### Katerise ##########################################
 #######################################################
 # Entered system, encountered colony ship
@@ -87,17 +143,22 @@ ship_event = {
 	location = from
 	is_triggered_only = yes
 	trigger = { 
-		# EHOF version should only trigger after doing Katzenland digsite, both system spawning and events related to it
-		#owner = { has_country_flag = found_katzenland_katzens }
+		owner = { has_country_flag = found_katzenland_katzens }
 		from = { has_planet_flag = forrana }
 	}
 
 	option = {
 		name = "giga_katzen_colonyship.200.a"
+		hidden_effect = {
+			add_modifier = { modifier = giga_katzen_colonyship_primitive_ezics }
+		}
 	}
 }
 
-# Survey, Katerise
+## Survey, Katerise
+# on_survey
+# Scope = Ship
+# From = Planet
 ship_event = {
 	id = giga_katzen_colonyship.001
 	title = "giga_katzen_colonyship.001.name"
@@ -107,14 +168,82 @@ ship_event = {
 	location = from
 	is_triggered_only = yes
 	trigger = { 
-		# EHOF version should only trigger after doing Katzenland digsite, both system spawning and events related to it
-		#owner = { has_country_flag = found_katzenland_katzens }
-		from = { has_planet_flag = katerise } 
+		owner = { has_country_flag = found_katzenland_katzens }
+		from = { has_planet_flag = katerise }
 	}
 
 	option = {
 		name = "giga_katzen_colonyship.001.a"
-		hidden_effect = { from = { create_archaeological_site = site_katerise } }
+		hidden_effect = {
+			# fallback events in case survey borked somehow use this
+			set_country_flag = found_katerise_digsite
+			from = { 
+				create_archaeological_site = site_katerise
+				set_planet_flag = katerise_digsite_spawned
+			}
+		}
+	}
+}
+
+## Fallback, on_planet_surveyed action
+# still has flavour, country that gained it must have studied katzenland
+# Root = Planet
+# From = Country
+# FromFrom = Fleet of the science ship that surveyed it, if any
+planet_event = {
+	id = giga_katzen_colonyship.111
+	title = "giga_katzen_colonyship.111.name"
+	desc = "giga_katzen_colonyship.111.desc"
+	picture = GFX_evt_relic_world_street
+	show_sound = event_ghost_town
+	location = root
+	is_triggered_only = yes
+	trigger = {
+		has_planet_flag = katerise
+		not = { has_planet_flag = katerise_digsite_spawned }
+		from = {
+			has_country_flag = found_katzenland_katzens
+			not = { has_country_flag = found_katerise_digsite }
+		}
+	}
+
+	option = {
+		name = "giga_katzen_colonyship.111.a"
+		hidden_effect = {
+			# survey hopefully unborked here
+			from = { set_country_flag = found_katerise_digsite }
+			root = {
+				create_archaeological_site = site_katerise
+				set_planet_flag = katerise_digsite_spawned
+			}
+		}
+	}
+}
+
+## Final fallback, on_planet_surveyed action
+# country has not studied Katzenland but got to the system first, ensure digsite is there at least
+# Root = Planet
+# From = Country
+# FromFrom = Fleet of the science ship that surveyed it, if any
+planet_event = {
+	id = giga_katzen_colonyship.112
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_planet_flag = katerise
+		not = { has_planet_flag = katerise_digsite_spawned }
+		from = {
+			not = { has_country_flag = found_katerise_digsite }
+		}
+	}
+
+	immediate = {
+		# survey hopefully unborked here
+		from = { set_country_flag = found_katerise_digsite }
+		root = {
+			create_archaeological_site = site_katerise
+			set_planet_flag = katerise_digsite_spawned
+		}
 	}
 }
 

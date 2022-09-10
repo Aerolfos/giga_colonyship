@@ -6,7 +6,7 @@ giga_selkar_initializer = {
 	asteroid_belt = { type = rocky_asteroid_belt radius = 139 }
 
 	planet = {
-		name = "Selkar"
+		name = "NAME_Selkar"
 		class = "pc_k_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -15,7 +15,7 @@ giga_selkar_initializer = {
 	}
 
 	planet = {
-		name = "Estvor"
+		name = "NAME_Estvor"
 		class = "pc_molten"
 		orbit_distance = 27
 		orbit_angle = -43
@@ -23,7 +23,7 @@ giga_selkar_initializer = {
 		has_ring = yes
 
 		moon = {
-			name = "Mitrar"
+			name = "NAME_Mitrar"
 			class = "pc_barren"
 			size = 7
 			orbit_distance = 7
@@ -33,7 +33,7 @@ giga_selkar_initializer = {
 	}
 
 	planet = {
-		name = "Katerise"
+		name = "NAME_Katerise"
 		class = "pc_katzenland"
 		orbit_distance = 40
 		orbit_angle = 77
@@ -54,7 +54,7 @@ giga_selkar_initializer = {
 		}
 
 		moon = {
-			name = "Janix"
+			name = "NAME_Janix"
 			class = "pc_katzenland"
 			size = 18
 			orbit_distance = 12
@@ -74,7 +74,7 @@ giga_selkar_initializer = {
 	}
 
 	planet = {
-		name = "Forrana"
+		name = "NAME_Forrana"
 		class = "pc_continental"
 		orbit_distance = 34
 		orbit_angle = 190
@@ -90,7 +90,7 @@ giga_selkar_initializer = {
 		}
 
 		moon = {
-			name = "Vaptar"
+			name = "NAME_Vaptar"
 			class = "pc_barren_cold"
 			size = 7
 			orbit_distance = 10
@@ -102,7 +102,7 @@ giga_selkar_initializer = {
 	change_orbit = 40
 
 	planet = {
-		name = "RP-214"
+		name = "NAME_RP_214"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 0 max = 360 }
@@ -111,7 +111,7 @@ giga_selkar_initializer = {
 	}
 
 	planet = {
-		name = "RP-297"
+		name = "NAME_RP_297"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = 47
@@ -120,7 +120,7 @@ giga_selkar_initializer = {
 	}
 
 	planet = {
-		name = "RP-238"
+		name = "NAME_RP_238"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = -145
@@ -129,7 +129,7 @@ giga_selkar_initializer = {
 	}
 
 	planet = {
-		name = "Ghax"
+		name = "NAME_Ghax"
 		class = "pc_frozen"
 		orbit_distance = 12
 		orbit_angle = { min = 0 max = 360 }
@@ -137,17 +137,8 @@ giga_selkar_initializer = {
 		has_ring = no
 	}
 
-	# temporary to make it spawn in the galaxy
-	# should be spawned via EHOF event as a unique EHOF leviathan system instead
-	usage = misc_system_init
-	usage_odds = {
-		base = 2000000
-		modifier = {
-			factor = 0
-			is_bottleneck_system = yes
-		}
-	}
-	max_instances = 1
+	# spawns via EHOF event
+
 }
 
 

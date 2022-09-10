@@ -1,0 +1,5 @@
+
+giga_katzen_colonyship_primitive_ezics = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_animal_wildlife.dds"
+	icon_frame = 1
+}
