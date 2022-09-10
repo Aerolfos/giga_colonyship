@@ -5,13 +5,14 @@ Updated to 3.4.
 This mod will add a new unique system to the EHOF cohesives, with a Gigastructures-related storyline to be uncovered.
 
 Spawn conditions:
-[spoiler] You must have done the Katzenland digsite and found the Katzen origin in order to make the system spawn. It will randomly spawn when you generate new cohesive systems. [/spoiler]
+[spoiler]You must have done the Katzenland digsite and found the Katzen origin in order to make the system spawn. It will randomly spawn when you generate new cohesive systems.[/spoiler]
 
 Spoilers for content:
-[spoiler] Spawns the new system Selkar with what turns out to be a Katzen colony ship, the Meopian Expedtion 4. The Katzen found an EHOF system basically by accident, and colonized it. However they ended up nuking themselves... again. [/spoiler]
+[spoiler]Spawns the new system Selkar with what turns out to be a Katzen colony ship, the Meopian Expedtion 4. The Katzen found an EHOF system basically by accident, and colonized it. However they ended up nuking themselves... again.[/spoiler]
 
 [u]Issues:[/u]
 
+[spoiler]
 I'm not entirely happy with the pacing in the dig site, so give feedback on that. 
 
 The rewards could be looked at - one is getting the event for the Katzen bombardment, since that requires having seen two Irradiated Desert planets in vanilla gigas, and this counts as the second IMO. The event referenced doesn't acknowledge that, but I can't rewrite gigas own events. 
@@ -25,3 +26,4 @@ It would be nice if you could refurbish the broken Katzen colony ship as a war s
 I want to spawn an ambient object with the broken ship after having killed it, but don't know how to get the broken model for the ship.
 
 The Ezicanias could be said to have evolved into another subspecies, adding more to the catch them all aspect. I don't know the lore enough to attempt that - right now they're the Dark Forest type that used to be on Katzenland.
+[/spoiler]
