@@ -48,15 +48,17 @@ generate_Forrana_primitives_on_planet = {
 				"null"
 			}
 		}
+		origin = "origin_default"
 		type = primitive
 	}
 	last_created_country = {
 		set_graphical_culture = industrial_01
 		set_country_flag = ezic_lost_colonists
 		set_country_flag = ezic_age
-		set_primitive_age = ezic_age
+		set_pre_ftl_age = ezic_age
 		save_global_event_target_as = ezic_lost_colonists
 	}
+	set_pre_ftl_origin = yes
 	while = {
 		count = 10
 		create_pop = { species = event_target:darkforestezics }

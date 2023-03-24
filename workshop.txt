@@ -1,6 +1,6 @@
 Originally made for the Gigastructures Discord competition.
 
-Updated to 3.4.
+Updated to 3.7.
 
 This mod will add a new unique system to the EHOF cohesives, with a Gigastructures-related storyline to be uncovered.
 

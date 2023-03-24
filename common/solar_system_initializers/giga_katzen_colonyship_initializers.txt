@@ -87,6 +87,7 @@ giga_selkar_initializer = {
 			set_planet_flag = forrana
 			save_global_event_target_as = forrana
 			generate_Forrana_primitives_on_planet = yes
+			change_colony_foundation_date = -461
 		}
 
 		moon = {
