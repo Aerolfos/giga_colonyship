@@ -1,11 +1,12 @@
 name="Gigastructural Katzen colony ship addon"
-version="3.7.*"
+version="1.1.1"
 dependencies={
-	"Gigastructural Engineering & More (3.7)"
+	"Gigastructural Engineering & More (3.9)"
 }
 tags={
 	"Spaceships"
 }
+path="mod/giga_colonyship/giga_colonyship"
 picture="thumbnail.png"
-supported_version="3.7.*"
+supported_version="3.9.*"
 remote_file_id="2562393169"
