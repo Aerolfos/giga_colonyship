@@ -5,7 +5,7 @@
 [![Repository License](https://img.shields.io/github/license/aerolfos/giga_colonyship?style=flat&color=brightgreen)](LICENSE)
 <!---[![Discord](https://img.shields.io/discord/739835273969664050?style=flat&label=Discord&logo=discord&logoColor=white&color=7289DA)](https://discord.com/invite/xUrG9wh)--->
 
-![Blue Triangle](https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/blue_caution_triangle.png) Supports Stellaris version: `3.7.x`
+![Blue Triangle](https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/blue_caution_triangle.png) Supports Stellaris version: `3.13.x`
 
 ![No Achievement Icon](https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/not_victorious_small.png) Not achievement compatible.
 
