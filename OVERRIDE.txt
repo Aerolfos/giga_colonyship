@@ -1,0 +1,1 @@
+release_note_template_filename_override="release_note_template_override.md"
