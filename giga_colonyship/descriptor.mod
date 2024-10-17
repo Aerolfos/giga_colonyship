@@ -1,7 +1,7 @@
-name="Gigastructural Katzen colony ship addon"
+name="Gigastructures Katzen Colony Ship Addon"
 version="v1.1.2"
 dependencies={
-	"Gigastructural Engineering & More (3.9)"
+	"Gigastructural Engineering & More (3.13)"
 }
 tags={
 	"Spaceships"
