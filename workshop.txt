@@ -1,7 +1,9 @@
 Originally made for the Gigastructures Discord competition.
 
-Updated to 3.7.
+[h3][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/blue_caution_triangle.png[/img] Supports Stellaris version: [b]3.7.x[/b][/h3]
+[h3][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/not_victorious_small.png[/img] Not achievement compatible.[/h3]
 
+[img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_description_1.png[/img]
 This mod will add a new unique system to the EHOF cohesives, with a Gigastructures-related storyline to be uncovered.
 
 Spawn conditions:
@@ -9,6 +11,14 @@ Spawn conditions:
 
 Spoilers for content:
 [spoiler]Spawns the new system Selkar with what turns out to be a Katzen colony ship, the Meopian Expedtion 4. The Katzen found an EHOF system basically by accident, and colonized it. However they ended up nuking themselves... again.[/spoiler]
+
+[h3]Credits[/h3]
+Kreitani for making the ship asset used for the titular colony ship found in this mod.
+
+[h3]Links[/h3]
+[url=https://github.com/Aerolfos/giga_colonyship/releases/latest][img]https://img.shields.io/github/v/release/aerolfos/giga_colonyship?logo=github&style=flat)[/img][/url] - Download from Github
+[url=https://github.com/Aerolfos/giga_colonyship][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_github_2.png[/img][/url]
+
 
 [u]Issues:[/u]
 
