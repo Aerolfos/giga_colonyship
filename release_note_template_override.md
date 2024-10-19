@@ -1,4 +1,4 @@
-## Supports Stellaris version: `WIP`
+## Supports Stellaris version: `None`
 
 ## Installation
 
