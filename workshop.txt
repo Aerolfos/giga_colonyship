@@ -1,6 +1,6 @@
 Originally made for the Gigastructures Discord competition.
 
-[h3][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/blue_caution_triangle.png[/img] Supports Stellaris version: [b]3.13.x[/b][/h3]
+[h3][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/blue_caution_triangle.png[/img] Supports Stellaris version: [b]3.14.x[/b][/h3]
 [h3][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/not_victorious_small.png[/img] Not achievement compatible.[/h3]
 
 [img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_description_1.png[/img]
